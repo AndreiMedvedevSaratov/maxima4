@@ -56,3 +56,28 @@ iframe {
   width: 1500px;
   height: 1500px;
 }
+
+th {
+  border: 2px solid orange;
+}
+
+ul {
+  border: 1px solid blue;
+  list-style-type: square;
+}
+
+.cell-green {
+  background-color: green;
+}
+
+#cell-green-6 {
+  background-color: green;
+}
+
+.cell {
+  background-color: cornflowerblue;
+}
+
+#cell-red-5 {
+  background-color: red;
+}
