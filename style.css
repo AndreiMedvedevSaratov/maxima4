@@ -34,3 +34,25 @@
   background-size: contain;
   height: 500px;
 }
+
+table {
+  width: 300px;
+  border: 1px solid black;
+  border-spacing: 0;
+}
+
+td {
+  border: 1px solid black;
+  height: 100px;
+  padding: 10px;
+}
+
+th {
+  border: 1px solid black;
+  height: 50px;
+}
+
+iframe {
+  width: 1500px;
+  height: 1500px;
+}
