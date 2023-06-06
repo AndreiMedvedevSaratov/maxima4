@@ -81,3 +81,24 @@ ul {
 #cell-red-5 {
   background-color: red;
 }
+
+/* .nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+} */
+
+.nav-item-1 {
+  margin-left: 100px;
+}
+
+.nav-item-2 {
+  margin-left: 50px;
+}
+
+.nav-item-3 {
+  margin-left: 75px;
+}
+
+.nav-item-4 {
+  margin-left: 250px;
+}
