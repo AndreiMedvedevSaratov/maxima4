@@ -1,87 +1,7 @@
-.wrapper {
-  display: flex;
-  width: 100%;
-  border: 1px solid black;
-  /* flex-direction: column; */
-  justify-content: space-around;
-  /* flex-wrap: wrap; */
-  /* max-width: 700px; */
-  min-width: 650px;
+body {
+  width: 1068px;
+  margin: 0 auto;
 }
-
-.wrapper-item {
-  /* display: inline; */
-  width: 200px;
-  height: 250px;
-  border: 1px solid red;
-  overflow: hidden;
-  font-size: 24px;
-  line-height: 40px;
-}
-
-.span-class {
-  color: red;
-}
-
-.kosharius-wrapper {
-  width: 200px;
-  height: 200px;
-}
-
-.kosharius {
-  background-image: url("./cat.webp");
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 500px;
-}
-
-table {
-  width: 300px;
-  border: 1px solid black;
-  border-spacing: 0;
-}
-
-td {
-  border: 1px solid black;
-  height: 100px;
-  padding: 10px;
-}
-
-th {
-  border: 1px solid black;
-  height: 50px;
-}
-
-iframe {
-  width: 1500px;
-  height: 1500px;
-}
-
-th {
-  border: 2px solid orange;
-}
-
-ul {
-  border: 1px solid blue;
-  list-style-type: square;
-}
-
-.cell-green {
-  background-color: green;
-}
-
-#cell-green-6 {
-  background-color: green;
-}
-
-.cell {
-  background-color: cornflowerblue;
-}
-
-#cell-red-5 {
-  background-color: red;
-}
-
 /* .nav-wrapper {
   display: flex;
   justify-content: space-between;
@@ -101,4 +21,79 @@ ul {
 
 .nav-item-4 {
   margin-left: 250px;
+}
+
+.banner-wrapper {
+  position: relative;
+  background-color: black;
+  width: calc(80% - 50px);
+  height: 500px;
+  display: flex;
+  border: 1px solid black;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.banner-wrapper__item-1 {
+  height: calc(500px - 2 * 1px);
+  width: calc(30% - 2 * 1px);
+  border: 1px solid red;
+}
+
+.banner-wrapper__item-2 {
+  height: calc(500px - 2 * 1px);
+  width: calc(100% - 30% - 2 * 1px);
+  border: 1px solid red;
+}
+
+.banner-wrapper__green-button {
+  position: absolute;
+  width: 245px;
+  height: 55px;
+  left: 149px;
+  top: 681px;
+
+  background: linear-gradient(92.02deg, #6bffca 13.34%, #00ff47 129.97%);
+  border-radius: 40px;
+}
+
+.banner-wrapper__gradient-circle {
+  position: absolute;
+  width: 821px;
+  height: 821px;
+  left: 808px;
+  top: 77px;
+
+  /* Accent */
+  background: #6bffca;
+  filter: blur(120px);
+  z-index: -10;
+}
+
+.position-item-1,
+.position-item-2,
+.position-item-3 {
+  height: 200px;
+  /* position: relative; */
+  /* z-index: 10; */
+}
+
+.position-item-1 {
+  background-color: red;
+  opacity: 0.9;
+}
+
+.position-item-2 {
+  /* position: relative; */
+  top: 30px;
+  left: 50px;
+  background-color: blue;
+}
+
+.position-item-3 {
+  /* position: relative; */
+  background-color: green;
+  /* z-index: 11; */
 }
