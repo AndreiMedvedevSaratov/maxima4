@@ -1,6 +1,7 @@
 body {
   width: 1068px;
   margin: 0 auto;
+  /* position: relative; */
 }
 /* .nav-wrapper {
   display: flex;
@@ -72,6 +73,11 @@ body {
   z-index: -10;
 }
 
+.position-wrapper {
+  position: relative;
+  /* left: 500px; */
+}
+
 .position-item-1,
 .position-item-2,
 .position-item-3 {
@@ -86,9 +92,10 @@ body {
 }
 
 .position-item-2 {
-  /* position: relative; */
-  top: 30px;
-  left: 50px;
+  position: absolute;
+  width: 100%;
+  top: 100px;
+  left: 100px;
   background-color: blue;
 }
 
@@ -96,4 +103,13 @@ body {
   /* position: relative; */
   background-color: green;
   /* z-index: 11; */
+}
+
+.position-item-4 {
+  position: fixed;
+  width: 200px;
+  height: 40px;
+  bottom: 40px;
+  right: 40px;
+  background-color: blue;
 }
