@@ -8,6 +8,14 @@ body {
 
 .nav-wrapper {
   margin-bottom: 20px;
+  max-width: 80%;
+  min-width: 80%;
+  font-size: 36px;
+  background-color: lime;
+}
+
+.nav-wrapper {
+  margin-bottom: 20px;
 }
 
 .nav-item-1 {
@@ -27,8 +35,10 @@ body {
 }
 
 .cards-wrapper {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  /* border-radius: 50%; */
+  /* flex-wrap: wrap; */
 }
 
 .cards-wrapper__item {
@@ -38,6 +48,7 @@ body {
   margin-right: 10px;
   margin-bottom: 10px;
   background-color: brown;
+  border-radius: 50%;
 }
 
 .super-puper {
@@ -73,6 +84,45 @@ body {
   position: absolute;
   right: -120px;
   top: 0;
+}
+
+.grid-wrapper {
+  display: grid;
+  grid:
+    "h h h"
+    "a b c"
+    "f f f";
+  grid-template-columns: 2fr 10fr 2fr;
+}
+
+header {
+  grid-area: h;
+  min-height: 50px;
+  border: 1px solid black;
+}
+
+article {
+  grid-area: b;
+  min-width: 12em;
+  border: 1px solid black;
+}
+
+nav {
+  grid-area: a;
+  /* auto min-width */
+  border: 1px solid black;
+}
+
+aside {
+  grid-area: c;
+  /* min-width: 12em; */
+  border: 1px solid black;
+}
+
+footer {
+  grid-area: f;
+  min-height: 50px;
+  border: 1px solid black;
 }
 
 @media screen and (max-width: 320px) {
